@@ -1,5 +1,4 @@
-# M-JQ
-JQ笔记
+# JQ笔记
 #### JQueryuery选择器  
 
  
