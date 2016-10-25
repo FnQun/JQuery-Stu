@@ -1,7 +1,5 @@
 # JQ笔记
-#### JQueryuery选择器  
-
- 
+#### [JQueryuery选择器 ](https://github.com/FnQun/M-JQ/tree/master/Selector)
 
 #### [JQuery DOM操作](https://github.com/FnQun/M-JQ/blob/master/DOM/dom.md)
 
