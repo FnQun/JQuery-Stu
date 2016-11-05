@@ -58,8 +58,31 @@ $(B).insertBefore(A) :　效果同上　语义相反
 + 删除节点
 ```
 remove()
+------
+remove() : 不完全还原(删除后再次还原相当于重新添加一个新的节点,原来的联系均被清除!)
 
 detach()
-
+------
+detach() : 类似一键还原(不光是还原节点,所有与节点的交互联系均被还原!)
 empty()
+
+empty() : 清空节点!!
+
++ 节点复制
+
+clone()
+------
+$("A").clone().after("B") : 复制A节点到B节点的尾部
+$("A").clone(ture).after("B") : 复制A节点到B节点的尾部,[且新复制的节点也具有复制功能!]
+
++ 替换节点
+
+replaceWith()
+------
+$("A").replaceWith("B")
+
+replaceAll()
+------
+$("B").replaceWith("A")
+效果相同,语法相反!
 ```
