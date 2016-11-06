@@ -99,7 +99,8 @@ $("span").wrap("<div></div>");
 </div>
 ```
 wrapAll()
-> [与wrap()区别:一个标签可同时包裹多个一对多,wrap()只能一对一包裹]
+> [与wrap()区别:一个标签可同时包裹多个一对多,wrap()只能一对一包裹]  
+
 ```
 $("span").wrapAll(<div></div>);
 //
@@ -119,4 +120,7 @@ $("span").wrapInner(<div></div>);
 + 属性操作
 attr() :获取和设置节点属性
 removeAttr()删除节点属性
-
+`$("p").attr();`获取`<p>`标签的属性
+`$("p").attr("title" , "titleName");`设置`<p>`标签属性  
+一次设置多个属性采用键值对形式***[类JSON]***:  
+`$("p").attr("title" : "titleName" , "name" : "test")`
