@@ -45,7 +45,35 @@ A,B可为任意的id,类,标签选择器等
 
 + 显示隐藏选择器
 
- 选择器|简介|选择|用例
+选择器|简介|选择|用例
 ---|---|---|---
 `:visible`|选取所有可见的元素|(可)多个|`$(":visible")`或者`$("div:visible")`
 `:hidden`|选取所有隐藏的元素|(可)多个|`$(":hidden")`或者`$("div:hidden")`
++ 类CSS伪元素选择器(`:nth-child(n)`)
+
+选择器|简介|选择|用例
+---|---|---|---
+`nth-child(even\odd\(n)表达式)`|选取奇/偶/包含n的表达式的元素|多个|`$(div:nth-child(2n+1\2n))`n从0开始计数
+`:first-child`|选取每个父元素的第一个元素|(可)多个|`$("div:first-child")`
+`:last-child`|选取每个父元素的最后一个元素|(可)多个|`$("div:last-child")`
+`:only-child`|选取每个父元素下唯一的元素(如果有其他元素那么不能选取)|(可)多个|`$("div:noly-child")`
++ 表单对象选择器
+
+选择器|简介|选择|用例
+---|---|---|---
+`:enabled`|选取所有可用元素|(可)多个|`$("#form:enabled")`
+`:disabled`|选取所有不可用元素|(可)多个|`$("#form:disabled")`
+`:checked`|选取所有被选中的元素[单选\多选]|(可)多个|`$("#form:checked")`
+`:selected`|选取所有被选中的元素[下拉菜单]|(可)多个|`$("#form:selected")`
+---|---|---|---
+`:input`|选取所有的<input>\<texarea>\<select>\<button>|(可)多个|`$(":input")`
+`:text`|选取所有单行文本框|多个|`$("text")`  |
+`:password`| 选取所有的密码框 | 多个 | `$(":password")` |
+`:radio`| 选取所有的单选框 | 多个 | `$(":radio")` |
+`:checked`| 选取所有的多选框 | 多个 | `$(":checked")` |
+`:submit`| 选取所有的提交按钮 | 多个 | `$(":submit")` |
+`:image`| 选取所有的图像按钮 | 多个 | `$(":image")` |
+`:reset`| 选取所有的重置按钮 | 多个 | `$(":reset")` |
+`:button`| 选取所有的按钮 | 多个 | `$(":button")` |
+`:file`| 选取所有的上传域 | 多个 | `$(":file")` |
+`:hidden`| 选取所有的不可见元素 | 多个 | `$(":hidden")` |
