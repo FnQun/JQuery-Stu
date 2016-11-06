@@ -1,7 +1,7 @@
 ##### 分类
-+ DOM core  
-+ CSS-DOM
-+ HTML-DOM
+DOM core  
+<a href="#01">CSS-DOM</a>  
+<a href="#02">HTML-DOM</a>  
 
 ##### JQuery中DOM操作
 + 查找节点
@@ -117,10 +117,15 @@ $("span").wrapInner(<div></div>);
 <span><div>text01</div></span>
 <span><div>text02</div></span>
 ```
-+ 属性操作
-attr() :获取和设置节点属性
-removeAttr()删除节点属性
++ 属性操作  
+attr() :获取和设置节点属性  
+removeAttr()删除节点属性  
 `$("p").attr();`获取`<p>`标签的属性
 `$("p").attr("title" , "titleName");`设置`<p>`标签属性  
 一次设置多个属性采用键值对形式***[类JSON]***:  
 `$("p").attr("title" : "titleName" , "name" : "test")`
+
+`$("p").removeattr("title");`删除`<p>`标签的title属性
+
+<a id="01"></a>
++
