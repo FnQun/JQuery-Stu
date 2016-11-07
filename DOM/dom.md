@@ -117,7 +117,7 @@ $("span").wrapInner(<div></div>);
 <span><div>text01</div></span>
 <span><div>text02</div></span>
 ```
-+ 属性操作  
++ <a id="css()锚点">属性操作</a>  
 attr() :获取和设置节点属性  
 removeAttr()删除节点属性  
 `$("p").attr();`获取`<p>`标签的属性
@@ -127,7 +127,6 @@ removeAttr()删除节点属性
 
 `$("p").removeattr("title");`删除`<p>`标签的title属性
 
-### CSS-DOM
 + [获取样式\设置样式](https://github.com/FnQun/M-JQ/edit/master/DOM/dom.md#获取样式\设置样式)
 + [追加样式](https://github.com/FnQun/M-JQ/edit/master/DOM/dom.md#追加样式)
 + [移除样式](https://github.com/FnQun/M-JQ/edit/master/DOM/dom.md#移除样式)
@@ -150,4 +149,10 @@ removeAttr()删除节点属性
 `removeClass()`
 `$("div").removeClass("className");
 //移除class名为className的样式`  
-`$("div").removeClass()`//移除所有class
+`$("div").removeClass()`//移除所有class  
+
+### CSS-DOM
+`css()`
+`$("div").css("color")`//获取样式颜色
+`$("div").css("color" , "blue")`//设置样式颜色为蓝色
+`$("div").css("color" : "blue" , "padding" : "10px")`//多个样式采用键值对形式[__类JSON,和attr()一样](https://github.com/FnQun/JQurry-Stu/edit/master/DOM/dom.md#css()锚点)
