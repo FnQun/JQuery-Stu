@@ -3,7 +3,7 @@
 
 #### [JQuery DOM操作](https://github.com/FnQun/M-JQ/blob/master/DOM/dom.md)
 
-#### Jquery 事件动画  
+#### [Jquery 事件动画](https://github.com/FnQun/M-JQ/blob/master/Events-and-animation/README.md#dom加载)  
 
 #### JQuery 表单表格操作  
 
