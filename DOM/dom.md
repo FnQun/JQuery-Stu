@@ -1,7 +1,9 @@
 ##### 分类
-[DOM-core](https://github.com/FnQun/M-JQ/blob/master/DOM/dom.md#DOM-core)  
-[CSS-DOM](https://github.com/FnQun/M-JQ/blob/master/DOM/dom.md#css-dom)  
-[HTML-DOM](https://github.com/FnQun/M-JQ/blob/master/DOM/dom.md#html-dom)
+
+1. [DOM-core](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#dom-core)
+2. [HTML-DOM](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#html-dom)
+3. [CSS-DOM](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#css-dom)  
+
 
 ##### DOM-core
 + 查找节点
@@ -126,17 +128,18 @@ removeAttr()删除节点属性
 `$("p").attr("title" : "titleName" , "name" : "test")`
 
 `$("p").removeattr("title");`删除`<p>`标签的title属性
+### HTML-DOM  
 
-+ [获取样式\设置样式](https://github.com/FnQun/M-JQ/edit/master/DOM/dom.md#获取样式\设置样式)
-+ [追加样式](https://github.com/FnQun/M-JQ/edit/master/DOM/dom.md#追加样式)
-+ [移除样式](https://github.com/FnQun/M-JQ/edit/master/DOM/dom.md#移除样式)
-+ [切换样式](https://github.com/FnQun/M-JQ/edit/master/DOM/dom.md#切换样式)
-+ [判断是否有某样式](https://github.com/FnQun/M-JQ/edit/master/DOM/dom.md#判断是否有某样式)  
++ [获取样式\设置样式](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#获取样式\设置样式)
++ [追加样式](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#追加样式)
++ [移除样式](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#移除样式)
++ [切换样式](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#切换样式)
++ [判断是否有某样式](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#判断是否有某样式)  
 
 ###### 获取样式\设置样式
 `attr()`
-`$("p").attr("class");`//获取class
-`$("p").attr("class","className");`//设置一个class
+`$("p").attr("class");`//获取class  
+`$("p").attr("class","className");`//设置一个class  
 > class对应设置好的CSS样式  
 > 设置样式会覆盖原有的样式[**原来的class会被擦除**]  
 
@@ -152,7 +155,16 @@ removeAttr()删除节点属性
 `$("div").removeClass()`//移除所有class  
 
 ### CSS-DOM
-`css()`
-`$("div").css("color")`//获取样式颜色
-`$("div").css("color" , "blue")`//设置样式颜色为蓝色
-`$("div").css("color" : "blue" , "padding" : "10px")`//多个样式采用键值对形式[__类JSON,和attr()一样](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#css()锚点)
+`css()`  
+`$("div").css("color")`//获取样式颜色  
+`$("div").css("color" , "blue")`//设置样式颜色为蓝色  
+`$("div").css("color" : "blue" , "padding" : "10px")`//多个样式采用键值对形式[__类JSON,和attr()一样](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#css()锚点)  
+
+height() width() //获取或设置高和宽的值[具体的值]  
+
+1. `offset()`
+获取元素相对当前视窗的相对偏移[只对可见元素有效]
+2. `position()`
+获取元素相对最近的具有位属性的父元素相对偏移值.
+3. `scrollTop()\scrollLeft()`
+获取元素的滚动条距顶端或左侧的距离.
