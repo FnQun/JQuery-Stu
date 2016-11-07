@@ -124,7 +124,7 @@ attr() :获取和设置节点属性
 removeAttr()删除节点属性  
 `$("p").attr();`获取`<p>`标签的属性
 `$("p").attr("title" , "titleName");`设置`<p>`标签属性  
-一次设置多个属性采用键值对形式***[类JSON]***:  
+一次设置多个属性采用键值对形式**[类JSON]**:  
 `$("p").attr("title" : "titleName" , "name" : "test")`
 
 `$("p").removeattr("title");`删除`<p>`标签的title属性
@@ -135,13 +135,15 @@ removeAttr()删除节点属性
 + [移除样式](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#移除样式)
 + [切换样式](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#切换样式)
 + [判断是否有某样式](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#判断是否有某样式)  
++ [获取html&文本&值](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#获取html\文本\值) 
++ [遍历节点](https://github.com/FnQun/JQurry-Stu/blob/master/DOM/dom.md#遍历节点)  
 
 ###### 获取样式\设置样式
 `attr()`
 `$("p").attr("class");`//获取class  
 `$("p").attr("class","className");`//设置一个class  
 > class对应设置好的CSS样式  
-> 设置样式会覆盖原有的样式[**原来的class会被擦除**]  
+> 设置样式会覆盖原有的样式**[原来的class会被擦除]**  
 
 ###### 追加样式
 `addClass()`
@@ -153,6 +155,77 @@ removeAttr()删除节点属性
 `$("div").removeClass("className");
 //移除class名为className的样式`  
 `$("div").removeClass()`//移除所有class  
+
+###### 切换样式
+`toggle()`  
+```
+$("div").toggle(
+function(){   
+  //函数1
+},function(){
+  //函数2
+})
+//toggle()交换一组动作
+```
+toggleClass()
+类名存在就删除,不存在就添加!
+`$("div").toggleClass("class01")`
+<div class="class01"></div> // <div></div>  
+<div class="class  "></div> // <div class="class class01"></div>  
+
+###### 判断是否有某样式  
+hasClass()  
+`$("div").hasClass("className")`
+
+###### 获取html&文本&值  
++ html()  
+(类似JS中innerHTML属性)
+读取\设置某元素的html内容  
+
+```
+
+$("div").html();
+<div>
+<span>Text</span>
+</div>
+//<span>Text<span>
+
+```  
+
+获取的是**内部**的内容,不包括元素自身!
+
+```
+$("div").html("<span>Text</span>");
+// 往div标签内添加<span>Text</span>
+```  
+  
+html()**不能用于**XML文档
+  
++ text()
+(类似JS中innerText)  
+用来读取或设置某个元素的文本内容  
+```
+$("p").text();  //获取
+<p>Text</p> // Text 
+---
+$("p").text("Text");// 设置
+<p></p> // <p>Text</p>
+```  
++ val()
+(类似JS中value属性)  
+获取和设置元素的值  
+一般用于表单中
+###### 遍历节点
+1. children()
+用于获取元素的子元素集合
+2. next()
+用于获取元素后面紧邻的兄弟元素
+3. prev()
+用于获取元素前面紧邻的兄弟元素
+4. siblings()
+用于获取元素前后所有的兄弟元素
+5. closest()
+用于获取最近的匹配元素,**[自身满足返回自身,否则逐级向上找,若无,返回空JQuery对象]**  
 
 ### CSS-DOM
 `css()`  
