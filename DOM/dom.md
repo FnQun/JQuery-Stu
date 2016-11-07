@@ -155,4 +155,4 @@ removeAttr()删除节点属性
 `css()`
 `$("div").css("color")`//获取样式颜色
 `$("div").css("color" , "blue")`//设置样式颜色为蓝色
-`$("div").css("color" : "blue" , "padding" : "10px")`//多个样式采用键值对形式[__类JSON,和attr()一样](https://github.com/FnQun/JQurry-Stu/edit/master/DOM/dom.md#css()锚点)
+`$("div").css("color" : "blue" , "padding" : "10px")`//多个样式采用键值对形式[__类JSON,和attr()一样](https://github.com/FnQun/JQurry-Stu/DOM/dom.md#css()锚点)
