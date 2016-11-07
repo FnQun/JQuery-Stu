@@ -1,9 +1,9 @@
 ##### 分类
-DOM core  
-<a href="#01">CSS-DOM</a>  
-<a href="#02">HTML-DOM</a>  
+[DOM-core](https://github.com/FnQun/M-JQ/blob/master/DOM/dom.md#DOM-core)  
+[CSS-DOM](https://github.com/FnQun/M-JQ/blob/master/DOM/dom.md#css-dom)  
+[HTML-DOM](https://github.com/FnQun/M-JQ/blob/master/DOM/dom.md#html-dom)
 
-##### JQuery中DOM操作
+##### DOM-core
 + 查找节点
   + 元素节点
   + 属性节点
@@ -127,4 +127,27 @@ removeAttr()删除节点属性
 
 `$("p").removeattr("title");`删除`<p>`标签的title属性
 
-##### CSS-DOM
+### CSS-DOM
++ [获取样式\设置样式](https://github.com/FnQun/M-JQ/edit/master/DOM/dom.md#获取样式\设置样式)
++ [追加样式](https://github.com/FnQun/M-JQ/edit/master/DOM/dom.md#追加样式)
++ [移除样式](https://github.com/FnQun/M-JQ/edit/master/DOM/dom.md#移除样式)
++ [切换样式](https://github.com/FnQun/M-JQ/edit/master/DOM/dom.md#切换样式)
++ [判断是否有某样式](https://github.com/FnQun/M-JQ/edit/master/DOM/dom.md#判断是否有某样式)  
+
+###### 获取样式\设置样式
+`attr()`
+`$("p").attr("class");`//获取class
+`$("p").attr("class","className");`//设置一个class
+> class对应设置好的CSS样式  
+> 设置样式会覆盖原有的样式[**原来的class会被擦除**]  
+
+###### 追加样式
+`addClass()`
+`$("div").addClass("newClass");`//追加一个新的class
+`<div class="oldClass newClass"></div>`
+
+###### 移除样式
+`removeClass()`
+`$("div").removeClass("className");
+//移除class名为className的样式`  
+`$("div").removeClass()`//移除所有class
