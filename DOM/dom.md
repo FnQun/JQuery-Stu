@@ -127,5 +127,4 @@ removeAttr()删除节点属性
 
 `$("p").removeattr("title");`删除`<p>`标签的title属性
 
-<a id="01"></a>
-+
+##### CSS-DOM
