@@ -9,4 +9,14 @@
 
 ###### 事件绑定  
 `bind()`  
-bind(type [, date] , fn);
+`bind(type [, date] , func);`  
+type : 事件类型: blur focus load scroll click mouseover mouseout mouseenter等
+date : 可选参数 : even.date属性值传递的额外数据对象
+func : 绑定的函数
+实例: [绑定事件_demo]()**未完成  
+
+###### 绑定事件的一些简写形式
+###### 合成事件  
+hover()
+toggle()  
+##### 事件冒泡(重点)
