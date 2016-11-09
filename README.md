@@ -1,4 +1,4 @@
-# JQ笔记
+###JQuery笔记
 #### [JQueryuery选择器 ](https://github.com/FnQun/JQurry-Stu/tree/master/Selector)
 
 #### [JQuery DOM操作](https://github.com/FnQun/JQurry-Stu/tree/master/DOM)
