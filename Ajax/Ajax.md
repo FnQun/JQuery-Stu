@@ -52,3 +52,7 @@ $("#id").load("name.html" , function(responseContent,responseState ,XMLHttpReque
 //XMLHttpRequest对象
 })
 ```
+5.`$.get()`
+6.`$.post()`
+7. `$.getscript() / $.getJSON()`
+8.`$.ajax()`
