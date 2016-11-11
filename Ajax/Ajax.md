@@ -39,11 +39,11 @@ type[可选]|String|服务器端返回内容的格式
 
 
 
-4. 回调函数  
+4.回调函数  
 有3个参数 :
-+ 请求返回的内容  
-+ 请求状态  
-+ XMLHttpRequest对象  
+ + 请求返回的内容  
+ + 请求状态  
+ + XMLHttpRequest对象  
 
 ```
 $("#id").load("name.html" , function(responseContent,responseState ,XMLHttpRequest){
