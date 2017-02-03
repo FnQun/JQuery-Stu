@@ -45,7 +45,7 @@ type[可选]|String|服务器端返回内容的格式
  + 请求状态  
  + XMLHttpRequest对象  
 
-```
+```jquery
 $("#id").load("name.html" , function(responseContent,responseState ,XMLHttpRequest){
 //responseContent返回内容
 //responseState 状态
